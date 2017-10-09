@@ -8,6 +8,38 @@
 				"font-size"
 			],
 			[
+				"di",
+				"display"
+			],
+			[
+				"nav",
+				"nav_bar"
+			],
+			[
+				"tra",
+				"translate"
+			],
+			[
+				"pa",
+				"path"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"tr",
+				"target\tAttr"
+			],
+			[
+				"h",
+				"h1\tTag"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
 				"con",
 				"content"
 			],
@@ -42,10 +74,6 @@
 			[
 				"bor",
 				"border-radius"
-			],
-			[
-				"tra",
-				"transparentize"
 			],
 			[
 				"cart",
@@ -140,10 +168,6 @@
 				"light-gray"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
 				"head",
 				"header\tTag"
 			],
@@ -183,6 +207,75 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/main.js",
+			"settings":
+			{
+				"buffer_size": 1564,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/App.vue",
+			"settings":
+			{
+				"buffer_size": 705,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/Home.vue",
+			"settings":
+			{
+				"buffer_size": 320,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/NavBar.vue",
+			"settings":
+			{
+				"buffer_size": 3923,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/Cover.vue",
+			"settings":
+			{
+				"buffer_size": 6475,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andresmoritan/Downloads/fontawesome-5.0.0-rc2-mac/svgs/solid/bars.svg",
+			"settings":
+			{
+				"buffer_size": 421,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andresmoritan/Downloads/menu.svg",
+			"settings":
+			{
+				"buffer_size": 728,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/style/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 262,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -228,10 +321,26 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/andresmoritan/Git/Web/andresmoritan"
+		"/Users/andresmoritan/Git/Web/andresmoritan",
+		"/Users/andresmoritan/Git/Web/andresmoritan/build",
+		"/Users/andresmoritan/Git/Web/andresmoritan/src",
+		"/Users/andresmoritan/Git/Web/andresmoritan/src/components",
+		"/Users/andresmoritan/Git/Web/andresmoritan/src/router",
+		"/Users/andresmoritan/Git/Web/andresmoritan/src/style"
 	],
 	"file_history":
 	[
+		"/Users/andresmoritan/Git/Web/market-frontend/src/components/Deal.vue",
+		"/Users/andresmoritan/Downloads/fontawesome-5.0.0-rc2-mac/svgs/solid/bars.svg",
+		"/Users/andresmoritan/Git/Web/andresmoritan/src/router/index.js",
+		"/Users/andresmoritan/Git/Web/market-frontend/src/components/Product.vue",
+		"/Users/andresmoritan/Downloads/fontawesome-5.0.0-rc2-mac/svgs/solid/comment.svg",
+		"/Users/andresmoritan/Downloads/fontawesome-5.0.0-rc2-mac/svgs/brands/linkedin.svg",
+		"/Users/andresmoritan/Git/Web/andresmoritan/src/main.js",
+		"/Users/andresmoritan/Downloads/fontawesome-5.0.0-rc2-mac/svgs/brands/twitter.svg",
+		"/Users/andresmoritan/Git/Web/belensantamarina/stylesheets/main.scss",
+		"/Users/andresmoritan/Git/Web/market-frontend/src/components/Cart.vue",
+		"/Users/andresmoritan/Git/Web/andresmoritan/build/utils.js",
 		"/Users/andresmoritan/GitHub/neoworkshop/app/mailers/user_mailer.rb",
 		"/Users/andresmoritan/GitHub/neoworkshop/app/controllers/admin/sellers_controller.rb",
 		"/Users/andresmoritan/GitHub/neoworkshop/app/controllers/admin/buyers_controller.rb",
@@ -348,28 +457,18 @@
 		"/Users/andresmoritan/GitHub/saltainvita/app/views/admin/buyers/index.xls.erb",
 		"/Users/andresmoritan/GitHub/saltainvita/app/views/admin/schedules/show.pdf.erb",
 		"/Users/andresmoritan/GitHub/saltainvita/app/views/admin/sellers/index.html.erb",
-		"/Users/andresmoritan/GitHub/saltainvita/app/views/admin/sellers/index.pdf.erb",
-		"/Users/andresmoritan/GitHub/saltainvita/app/views/admin/sellers/index.xls.erb",
-		"/Users/andresmoritan/GitHub/saltainvita/db/migrate/20170510101201_add_country_to_attendants.rb",
-		"/Users/andresmoritan/GitHub/saltainvita/app/models/country.rb",
-		"/Users/andresmoritan/GitHub/saltainvita/app/controllers/sellers_controller.rb",
-		"/Users/andresmoritan/GitHub/saltainvita/app/controllers/buyers_controller.rb",
-		"/Users/andresmoritan/GitHub/saltainvita/db/migrate/20170510103710_remove_province_id_from_attendants.rb",
-		"/Users/andresmoritan/GitHub/saltainvita/app/models/seller.rb",
-		"/Users/andresmoritan/GitHub/saltainvita/app/models/province.rb",
-		"/Users/andresmoritan/GitHub/saltainvita/db/migrate/20160525150814_create_provinces.rb",
-		"/Users/andresmoritan/GitHub/saltainvita/db/seeds.rb",
-		"/Users/andresmoritan/Library/Application Support/KeepVid Pro/Library.db"
+		"/Users/andresmoritan/GitHub/saltainvita/app/views/admin/sellers/index.pdf.erb"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
 		"height": 158.0,
 		"where_history":
 		[
+			"<current file>"
 		]
 	},
 	"find_state":
@@ -377,6 +476,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"blue",
+			"orange",
+			"red",
+			"large",
+			"i",
+			"k",
+			";",
+			"Hello"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -384,6 +491,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -394,14 +502,251 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1422,
+								1422
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/App.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								458,
+								464
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/Home.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/components/NavBar.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3271,
+								3271
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/components/Cover.vue",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 6475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/andresmoritan/Downloads/fontawesome-5.0.0-rc2-mac/svgs/solid/bars.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/XML (SVG).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/andresmoritan/Downloads/menu.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/XML (SVG).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/style/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								157
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 43.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -438,7 +783,7 @@
 	"project": "andresmoritan.sublime-project",
 	"replace":
 	{
-		"height": 82.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":

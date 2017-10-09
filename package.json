@@ -14,7 +14,11 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
+    "gsap": "^1.20.3",
+    "normalize.css": "^7.0.0",
     "vue": "^2.3.3",
+    "vue-awesome": "^2.3.3",
     "vue-router": "^2.3.1"
   },
   "devDependencies": {
