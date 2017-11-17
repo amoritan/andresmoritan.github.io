@@ -21,6 +21,12 @@ Icon.register({
 })
 Vue.component('icon', Icon)
 
+import IntersectionObserver from 'intersection-observer'
+import VueObserveVisibility from 'vue-observe-visibility'
+
+Vue.use(IntersectionObserver)
+Vue.use(VueObserveVisibility)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -45,4 +45,9 @@
     position: relative;
     top: .125em;
   }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 300;
+  }
 </style>

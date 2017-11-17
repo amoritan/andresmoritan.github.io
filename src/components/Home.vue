@@ -2,17 +2,29 @@
   <div id="home">
     <nav-bar></nav-bar>
     <cover></cover>
+    <philosophy></philosophy>
+    <expertise></expertise>
+    <technology></technology>
+    <!-- <projects></projects> -->
   </div>
 </template>
 
 <script>
   import NavBar from './NavBar'
   import Cover from './Cover'
+  import Philosophy from './Philosophy'
+  import Expertise from './Expertise'
+  import Technology from './Technology'
+  import Projects from './Projects'
   export default {
     name: 'home',
     components: {
       'nav-bar': NavBar,
-      'cover': Cover
+      'cover': Cover,
+      'philosophy': Philosophy,
+      'expertise': Expertise,
+      'technology': Technology,
+      'projects': Projects
     }
   }
 </script>
