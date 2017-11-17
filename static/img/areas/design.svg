@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="667" viewBox="0 0 375 667">
+  <defs>
+    <rect id="design-a" width="375" height="667"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="design-b" fill="#fff">
+      <use xlink:href="#design-a"/>
+    </mask>
+    <use fill="#82AAFF" fill-opacity=".25" xlink:href="#design-a"/>
+    <rect width="128" height="42" x="12" y="12" fill="#82AAFF" mask="url(#design-b)"/>
+    <rect width="230" height="30" x="22" y="373" fill="#82AAFF" mask="url(#design-b)"/>
+    <rect width="273" height="30" x="22" y="449" fill="#82AAFF" mask="url(#design-b)"/>
+    <rect width="204" height="30" x="22" y="525" fill="#82AAFF" mask="url(#design-b)"/>
+    <rect width="257" height="30" x="22" y="600" fill="#82AAFF" mask="url(#design-b)"/>
+    <rect width="42" height="42" x="321" y="12" fill="#82AAFF" mask="url(#design-b)"/>
+    <circle cx="188" cy="140" r="38" fill="#82AAFF" mask="url(#design-b)"/>
+    <circle cx="97" cy="280" r="27" fill="#82AAFF" mask="url(#design-b)"/>
+    <circle cx="279" cy="280" r="27" fill="#82AAFF" mask="url(#design-b)"/>
+  </g>
+</svg>
