@@ -109,9 +109,9 @@
 
       function resize () {
         width = window.innerWidth
-        height = window.innerHeight
+        // height = window.innerHeight
         canvas.width = width
-        canvas.height = height
+        // canvas.height = height
       }
 
       // animation
