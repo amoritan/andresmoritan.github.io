@@ -47,7 +47,6 @@
     },
     methods: {
       showPrinciples: function (el) {
-        window.console.log('el')
         this.swiper = new Swiper('.swiper-container', {
           direction: 'vertical',
           effect: 'coverflow',

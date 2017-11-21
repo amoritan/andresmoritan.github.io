@@ -46,8 +46,20 @@
     top: .125em;
   }
 
+  section {
+    padding: 3em 1em;
+    &.inverted {
+      background: $highlight;
+      color: $black;
+    }
+  }
+  
   h2 {
     font-size: 2em;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 1.75em;
     font-weight: 300;
   }
 </style>

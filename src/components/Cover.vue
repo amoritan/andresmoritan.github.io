@@ -200,6 +200,7 @@
 <style lang="scss" scoped>
   #cover {
     position: relative;
+    padding: 0;
     blockquote {
       position: absolute;
       top: 50%; left: 50%;
