@@ -1,5 +1,5 @@
 <template>
-  <div id="nav_bar" :class="{ active: active }">
+  <div id="navBar" :class="{ active: active, attached: attached }">
     <header>
       <a href="#" class="root"><h1>Andres Moritan</h1></a>
       <button class="toggle" @click="navToggle">
@@ -29,22 +29,32 @@
 
 <script>
   export default {
-    name: 'nav-bar',
+    name: 'navBar',
     data () {
       return {
+        attached: false,
         active: false
       }
     },
     methods: {
+      navAttach: function () {
+        this.attached = window.scrollY > 0
+      },
       navToggle: function () {
         this.active = !this.active
       }
+    },
+    mounted () {
+      window.addEventListener('scroll', this.navAttach)
+    },
+    destroyed () {
+      window.removeEventListener('scroll', this.navAttach)
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  #nav_bar {
+  #navBar {
     position: fixed;
     top: 0; right: 0; bottom: auto; left: 0;
     z-index: 50;
@@ -101,8 +111,24 @@
           text-transform: uppercase;
           padding: 2em 0;
           box-shadow: 0 1px 0 transparentize($black, .85);
+          opacity: 0;
+          animation: fadeInDown;
+          animation-duration: 1s;
+          animation-fill-mode: both;
           &:last-child {
             box-shadow: none;
+          }
+          &:nth-child(1) {
+            animation-delay: 0;
+          }
+          &:nth-child(2) {
+            animation-delay: .05s;
+          }
+          &:nth-child(3) {
+            animation-delay: .10s;
+          }
+          &:nth-child(4) {
+            animation-delay: .15s;
           }
         }
       }
@@ -118,10 +144,11 @@
       }
     }
     &:hover, &.attached, &.active {
-      background: transparentize($white, .05);
+      background: transparentize($white, .15);
       -webkit-backdrop-filter: blur(10px);
     }
     &.active {
+      background: transparentize($white, .05);
       bottom: 0;
       header button.toggle svg path {
         &#top_bar {
