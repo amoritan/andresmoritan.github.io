@@ -1,5 +1,5 @@
 <template>
-  <section id="clients">
+  <section id="clients" class="inverted">
 
     <h2>Awesome <strong>Clients</strong></h2>
 
@@ -39,23 +39,29 @@
 
 <style lang="scss" scoped>
   #clients {
-    h2 {
-      color: $highlight;
-    }
     .clients {
       display: flex;
       margin: 0;
       padding: 0;
       list-style: none;
       flex-wrap: wrap;
-      justify-content: space-around;
+      // justify-content: space-around;
+      align-content: stretch;
       .client {
         display: block;
         padding: 1em;
+        margin: .25em;
+        background: $white;
+        flex-grow: 1;
+        img {
+          display: block;
+          width: auto;
+          height: 100%;
+          margin: 0 auto;
+        }
       }
     }
     p {
-      color: $highlight;
       margin-top: 2em;
     }
   }

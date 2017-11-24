@@ -3,6 +3,8 @@
 
     <h2>About <strong>Me</strong></h2>
 
+    <p>I'am a Developer, Team Leader, Teacher and Entrepreneur in Information and Communications Technology (ICT).</p>
+
     <div class="avatarWrapper">
       <div class="avatarImage">
         <img src="/static/img/8bit/character.svg" width="144" height="448" alt="8-Bit Avatar" />
@@ -164,6 +166,9 @@
   #about {
     h2 {
       color: $highlight;
+    }
+    p {
+      margin-bottom: 2em;
     }
     .avatarWrapper {
       display: flex;
