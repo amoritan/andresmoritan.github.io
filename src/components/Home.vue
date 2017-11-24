@@ -5,7 +5,7 @@
     <philosophy></philosophy>
     <expertise></expertise>
     <technology></technology>
-    <!-- <projects></projects> -->
+    <projects></projects>
     <clients></clients>
     <about></about>
   </div>
@@ -17,7 +17,7 @@
   import Philosophy from './Philosophy'
   import Expertise from './Expertise'
   import Technology from './Technology'
-  // import Projects from './Projects'
+  import Projects from './Projects'
   import Clients from './Clients'
   import About from './About'
   export default {
@@ -28,7 +28,7 @@
       'philosophy': Philosophy,
       'expertise': Expertise,
       'technology': Technology,
-      // 'projects': Projects,
+      'projects': Projects,
       'clients': Clients,
       'about': About
     }
