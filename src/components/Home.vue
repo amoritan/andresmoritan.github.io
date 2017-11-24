@@ -7,6 +7,7 @@
     <technology></technology>
     <!-- <projects></projects> -->
     <clients></clients>
+    <about></about>
   </div>
 </template>
 
@@ -16,8 +17,9 @@
   import Philosophy from './Philosophy'
   import Expertise from './Expertise'
   import Technology from './Technology'
-  import Projects from './Projects'
+  // import Projects from './Projects'
   import Clients from './Clients'
+  import About from './About'
   export default {
     name: 'home',
     components: {
@@ -26,8 +28,9 @@
       'philosophy': Philosophy,
       'expertise': Expertise,
       'technology': Technology,
-      'projects': Projects,
-      'clients': Clients
+      // 'projects': Projects,
+      'clients': Clients,
+      'about': About
     }
   }
 </script>
