@@ -8,6 +8,7 @@
     <projects></projects>
     <clients></clients>
     <about></about>
+    <contact></contact>
   </div>
 </template>
 
@@ -20,6 +21,7 @@
   import Projects from './Projects'
   import Clients from './Clients'
   import About from './About'
+  import Contact from './Contact'
   export default {
     name: 'home',
     components: {
@@ -30,7 +32,8 @@
       'technology': Technology,
       'projects': Projects,
       'clients': Clients,
-      'about': About
+      'about': About,
+      'contact': Contact
     }
   }
 </script>
