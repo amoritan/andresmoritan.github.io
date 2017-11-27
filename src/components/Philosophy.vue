@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  import Swiper from 'swiper'
+  // import Swiper from 'swiper'
   export default {
     name: 'philosophy',
     data () {
@@ -47,7 +47,7 @@
     },
     methods: {
       showPrinciples: function (el) {
-        this.swiper = new Swiper('.swiper-container', {
+        /* this.swiper = new Swiper('.swiper-container', {
           direction: 'vertical',
           effect: 'coverflow',
           slidesPerView: 3,
@@ -57,14 +57,14 @@
             slideShadows: false
           },
           mousewheel: true
-        })
+        }) */
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  @import '~swiper/dist/css/swiper.css';
+  // @import '~swiper/dist/css/swiper.css';
 
   #philosophy {
     background: $highlight;
