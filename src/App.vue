@@ -37,8 +37,8 @@
   .blue {
     color: $blue;
   }
-  .violet {
-    color: $violet;
+  .purple {
+    color: $purple;
   }
 
   .fa-icon {

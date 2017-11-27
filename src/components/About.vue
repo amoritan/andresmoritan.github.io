@@ -316,7 +316,7 @@
             b { color: $blue; }
           }
           &.mktText {
-            b { color: $violet; }
+            b { color: $purple; }
           }
         }
       }

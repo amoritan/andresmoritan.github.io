@@ -14,7 +14,7 @@
         <li v-if="hoverOn === 'dev'" key="dev" class="green">Software Development</li>
         <li v-else-if="hoverOn === 'ui'" key="ui" class="red">User Experience</li>
         <li v-else-if="hoverOn === 'dsn'" key="dsn" class="blue">Graphic Design</li>
-        <li v-else-if="hoverOn === 'mkt'" key="mkt" class="violet">Online Marketing</li>
+        <li v-else-if="hoverOn === 'mkt'" key="mkt" class="purple">Online Marketing</li>
       </transition>
     </ul>
 
@@ -116,8 +116,8 @@
         &.blue {
           color: $blue;
         }
-        &.violet {
-          color: $violet;
+        &.purple {
+          color: $purple;
         }
       }
     }
