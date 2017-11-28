@@ -14,14 +14,14 @@
     </header>
     <nav>
       <div class="sections">
-        <a href="#philosophy">Work Philosophy</a>
-        <a href="#projects">Featured Projects</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Get In Touch</a>
+        <a href="#philosophy" v-scroll-to="'#philosophy'" @click="navToggle">Work Philosophy</a>
+        <a href="#projects" v-scroll-to="'#projects'" @click="navToggle">Featured Projects</a>
+        <a href="#about" v-scroll-to="'#about'" @click="navToggle">About Me</a>
+        <a href="#contact" v-scroll-to="'#contact'" @click="navToggle">Get In Touch</a>
       </div>
       <div class="references">
-        <a href="#" target="_blank"><icon name="fab_linkedin" scale="1.25"></icon></a>
-        <a href="#" target="_blank"><icon name="fab_twitter" scale="1.25"></icon></a>
+        <a href="http://linkedin.com/in/andresmoritan/" target="_blank" rel="external"><icon name="fab_linkedin" scale="1.25"></icon></a>
+      <a href="https://twitter.com/andresmoritan" target="_blank" rel="external"><icon name="fab_twitter" scale="1.25"></icon></a>
       </div>
     </nav>
   </div>

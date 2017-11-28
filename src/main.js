@@ -27,6 +27,9 @@ import VueObserveVisibility from 'vue-observe-visibility'
 Vue.use(IntersectionObserver)
 Vue.use(VueObserveVisibility)
 
+import VueScrollTo from 'vue-scrollto'
+Vue.use(VueScrollTo)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
