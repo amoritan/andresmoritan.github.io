@@ -9,7 +9,7 @@
       </li>
     </ul>
 
-    <p>From small tasks to big projects, this are the some of the clients that I had the pleasure to worked with.</p>
+    <p>From small tasks to big projects, this are the awesome companies and organizations that trusted me and my teams with their tech development needs. In addition to the privilege of working along with them and learning about their daily challenges, I had the pleasure to meet great professionals inside their businesses and for that I'm very grateful.</p>
 
   </section>
 </template>
@@ -27,6 +27,8 @@
           { name: 'Ferias Argentinas', src: '/static/img/clients/ferias.svg', width: 84, height: 48 },
           { name: 'Cámara de Turismo Argentina', src: '/static/img/clients/cat.svg', width: 159, height: 48 },
           { name: 'INPROTUR', src: '/static/img/clients/inprotur.svg', width: 106, height: 48 },
+          { name: 'FEDECATUR', src: '/static/img/clients/fedecatur.svg', width: 86, height: 48 },
+          { name: 'Aerolineas Argentinas', src: '/static/img/clients/aerolineas.svg', width: 96, height: 48 },
           { name: 'Cámara de Turismo de Salta', src: '/static/img/clients/catsalta.svg', width: 75, height: 48 },
           { name: 'Secretaría de Turismo de la Ciudad de Salta', src: '/static/img/clients/salta.svg', width: 106, height: 48 },
           { name: 'SGIT', src: '/static/img/clients/sgit.svg', width: 106, height: 48 },
