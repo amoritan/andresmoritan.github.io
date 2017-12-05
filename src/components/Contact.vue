@@ -126,7 +126,8 @@
     form {
       display: block;
       font-size: .85em;
-      margin: 1.5em 0 4em 0;
+      margin: 1.5em auto 4em auto;
+      max-width: 42em;
       fieldset {
         display: flex;
         padding: 0;
@@ -227,6 +228,7 @@
       font-size: .75em;
       color: transparentize($white, .75);
       p {
+        max-width: none;
         margin: 0;
         a {
           color: transparentize($white, .75);

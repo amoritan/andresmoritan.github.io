@@ -20,6 +20,12 @@
     font-family: $main-font;
     color: $white;
     background: $black;
+    @media (min-width: 1024px) {
+      font-size: 1.25em;
+    }
+    @media (min-width: 1920px) {
+      font-size: 1.5em;
+    }
   }
 
   .red {
@@ -61,5 +67,10 @@
   h3 {
     font-size: 1.75em;
     font-weight: 300;
+  }
+
+  p {
+    max-width: 40em;
+    margin: 1em auto;
   }
 </style>

@@ -167,11 +167,14 @@
     .foundations {
       list-style: none;
       background: transparentize($black, .5);
-      margin: 0 0 2em 0;
+      margin: 0 auto 2em auto;
       position: relative;
       color: $white;
+      max-width: 39em;
+      @media (min-width: 1024px) {
+        padding-left: 3em;
+      }
       .foundation {
-        max-width: 320px;
         font-family: $alt-font;
         text-transform: lowercase;
         font-weight: 300;
@@ -204,6 +207,7 @@
     }
     .principlesWrapper {
       margin: 2em auto;
+      max-width: 42em;
       .principles {
         display: flex;
         width: 100%;
@@ -216,6 +220,9 @@
         align-content: stretch;
         overflow: hidden;
         counter-reset: principle;
+        @media (min-width: 768px) {
+          height: 12em;
+        }
         .principle {
           position: relative;
           display: block;
@@ -226,12 +233,16 @@
           cursor: pointer;
           transition: all ease 1s;
           counter-increment: principle;
+          @media (min-width: 768px) {
+            width: calc(100% / 6);
+            height: calc(100% / 2);
+          }
           .principleContent {
             position: absolute;
             top: 0; right: 0; bottom: 0; left: 0;
             width: 100%;
             height: 100%;
-            background: transparentize($white, .5);
+            background: transparentize($black, .25);
             box-shadow: inset 0 0 0 .125em $highlight;
             display: flex;
             flex-direction: column;
@@ -244,15 +255,20 @@
             width: auto;
             height: 1.5em;
             margin: 0 auto;
-            fill: $black;
+            fill: $highlight;
           }
           p {
+            color: $white;
+            max-width: 90%;
             display: none;
             position: absolute;
             opacity: 0;
-            margin: 0 1em;
             font-weight: 300;
             font-size: 1.5em;
+            @media (min-width: 768px) {
+              left: 0; right: 0;
+              margin: 0 auto;
+            }
             &::before {
               content: counter(principle) '. ';
               font-weight: 400;
@@ -268,8 +284,12 @@
               opacity: 1;
               .principleContent {
                 box-shadow: none;
-                width: 300%;
-                height: 400%;
+                width: calc(100% * 3);
+                height: calc(100% * 4);
+                @media (min-width: 768px) {
+                  width: calc(100% * 6);
+                  height: calc(100% * 2);
+                }
               }
               svg {
                 animation: fadeOutUp 1s;
@@ -295,52 +315,85 @@
               &:nth-child(4) {
                 .principleContent {
                   top: -100%;
+                  @media (min-width: 768px) {
+                    top: 0;
+                    left: -300%;
+                  }
                 }
               }
               &:nth-child(5) {
                 .principleContent {
                   top: -100%;
                   left: -100%;
+                  @media (min-width: 768px) {
+                    top: 0;
+                    left: -400%;
+                  }
                 }
               }
               &:nth-child(6) {
                 .principleContent {
                   top: -100%;
                   left: -200%;
+                  @media (min-width: 768px) {
+                    top: 0;
+                    left: -500%;
+                  }
                 }
               }
               &:nth-child(7) {
                 .principleContent {
                   top: -200%;
+                  @media (min-width: 768px) {
+                    top: -100%;
+                  }
                 }
               }
               &:nth-child(8) {
                 .principleContent {
                   top: -200%;
                   left: -100%;
+                  @media (min-width: 768px) {
+                    top: -100%;
+                  }
                 }
               }
               &:nth-child(9) {
                 .principleContent {
                   top: -200%;
                   left: -200%;
+                  @media (min-width: 768px) {
+                    top: -100%;
+                  }
                 }
               }
               &:nth-child(10) {
                 .principleContent {
                   top: -300%;
+                  @media (min-width: 768px) {
+                    top: -100%;
+                    left: -300%;
+                  }
                 }
               }
               &:nth-child(11) {
                 .principleContent {
                   top: -300%;
                   left: -100%;
+                  @media (min-width: 768px) {
+                    top: -100%;
+                    left: -400%;
+                  }
                 }
               }
               &:nth-child(12) {
                 .principleContent {
                   top: -300%;
                   left: -200%;
+                  @media (min-width: 768px) {
+                    top: -100%;
+                    left: -500%;
+                  }
                 }
               }
             }
@@ -351,7 +404,9 @@
         appearance: none;
         display: block;
         border: none;
-        width: 100%;
+        width: auto;
+        max-width: 480px;
+        margin: 0 auto;
         box-shadow: 0 0 0 .125em transparentize($black, .125);
         background: none;
         color: transparentize($black, .125);

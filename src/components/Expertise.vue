@@ -3,20 +3,23 @@
 
     <h2>Areas of <strong>Expertise</strong></h2>
 
-    <figure v-observe-visibility="visibilityChanged" :class="{ active: isVisible }">
-      <img src="/static/img/areas/dev.svg" width="375" height="667" alt="Software Development" @mouseenter="mouseChanged(true, 'dev')" @mouseleave="mouseChanged(false, 'dev')" />
-      <img src="/static/img/areas/ui.svg" width="375" height="667" alt="User Interface / Experience" @mouseenter="mouseChanged(true, 'ui')" @mouseleave="mouseChanged(false, 'ui')" />
-      <img src="/static/img/areas/design.svg" width="375" height="667" alt="Graphic Design" @mouseenter="mouseChanged(true, 'dsn')" @mouseleave="mouseChanged(false, 'dsn')" />
-      <img src="/static/img/areas/share.svg" width="375" height="667" alt="Online Marketing" @mouseenter="mouseChanged(true, 'mkt')" @mouseleave="mouseChanged(false, 'mkt')" />
-    </figure>
-    <ul>
-      <transition mode="out-in" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
-        <li v-if="hoverOn === 'dev'" key="dev" class="green">Software Development</li>
-        <li v-else-if="hoverOn === 'ui'" key="ui" class="red">User Experience</li>
-        <li v-else-if="hoverOn === 'dsn'" key="dsn" class="blue">Graphic Design</li>
-        <li v-else-if="hoverOn === 'mkt'" key="mkt" class="purple">Online Marketing</li>
-      </transition>
-    </ul>
+    <div class="areasWrapper">
+      <figure v-observe-visibility="visibilityChanged" :class="{ active: isVisible }">
+        <img src="/static/img/areas/dev.svg" width="375" height="667" alt="Software Development" @mouseenter="mouseChanged(true, 'dev')" @mouseleave="mouseChanged(false, 'dev')" />
+        <img src="/static/img/areas/ui.svg" width="375" height="667" alt="User Interface / Experience" @mouseenter="mouseChanged(true, 'ui')" @mouseleave="mouseChanged(false, 'ui')" />
+        <img src="/static/img/areas/design.svg" width="375" height="667" alt="Graphic Design" @mouseenter="mouseChanged(true, 'dsn')" @mouseleave="mouseChanged(false, 'dsn')" />
+        <img src="/static/img/areas/share.svg" width="375" height="667" alt="Online Marketing" @mouseenter="mouseChanged(true, 'mkt')" @mouseleave="mouseChanged(false, 'mkt')" />
+      </figure>
+      <ul>
+        <transition mode="out-in" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
+          <li v-if="hoverOn === ''" key="nil" class="gray"><span id="upChevron">&#94;</span><span id="leftChevron">&#12296;</span> Pick a Stack</li>
+          <li v-else-if="hoverOn === 'dev'" key="dev" class="green">Software Development</li>
+          <li v-else-if="hoverOn === 'ui'" key="ui" class="red">User Experience</li>
+          <li v-else-if="hoverOn === 'dsn'" key="dsn" class="blue">Graphic Design</li>
+          <li v-else-if="hoverOn === 'mkt'" key="mkt" class="purple">Online Marketing</li>
+        </transition>
+      </ul>
+    </div>
 
   </section>
 </template>
@@ -55,6 +58,7 @@
       position: relative;
       perspective: 1000px;
       width: 80%;
+      max-width: 18em;
       margin: 3em auto 2em auto;
       img {
         display: block;
@@ -107,6 +111,13 @@
         text-align: center;
         text-transform: uppercase;
         font-weight: 300;
+        animation-duration: .5s;
+        &.gray {
+          color: $gray;
+          #leftChevron {
+            display: none;
+          }
+        }
         &.green {
           color: $green;
         }
@@ -118,6 +129,32 @@
         }
         &.purple {
           color: $purple;
+        }
+      }
+    }
+    .areasWrapper {
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        figure {
+          margin: 3em 0 2em 0;
+        }
+        ul {
+          min-width: 14em;
+          li {
+            text-align: left;
+            &.gray {
+              #leftChevron {
+                display: inline;
+              }
+              #upChevron {
+                display: none;
+              }
+            }
+          }
         }
       }
     }

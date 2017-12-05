@@ -20,8 +20,8 @@
         <a href="#contact" v-scroll-to="'#contact'" @click="navToggle">Get In Touch</a>
       </div>
       <div class="references">
-        <a href="http://linkedin.com/in/andresmoritan/" target="_blank" rel="external"><icon name="fab_linkedin" scale="1.25"></icon></a>
-      <a href="https://twitter.com/andresmoritan" target="_blank" rel="external"><icon name="fab_twitter" scale="1.25"></icon></a>
+        <a href="http://linkedin.com/in/andresmoritan/" target="_blank" rel="external"><icon name="fab_linkedin"></icon></a>
+      <a href="https://twitter.com/andresmoritan" target="_blank" rel="external"><icon name="fab_twitter"></icon></a>
       </div>
     </nav>
   </div>
@@ -60,8 +60,8 @@
     z-index: 50;
     transition: all .25s;
     header {
-      height: 64px;
-      padding: 0 16px;
+      height: 3.5em;
+      padding: 0 1em;
       color: $highlight;
       display: flex;
       align-items: center;
@@ -99,7 +99,12 @@
     }
     nav {
       display: none;
-      padding: 32px 16px;
+      height: calc(100% - 3.5em);
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: center;
+      max-width: 42em;
+      margin: 0 auto;
       .sections {
         a {
           display: block;
@@ -134,12 +139,14 @@
       }
       .references {
         text-align: center;
-        position: absolute;
-        right: 0; bottom: 1em; left: 0;
         a {
           display: inline-block;
           color: $highlight;
           margin: .5em .25em;
+          .fa-icon {
+            width: auto;
+            height: 1.25em;
+          }
         }
       }
     }
@@ -162,7 +169,7 @@
         }
       }
       nav {
-        display: block;
+        display: flex;
         flex-grow: 1;
       }
     }

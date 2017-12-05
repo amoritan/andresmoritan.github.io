@@ -217,8 +217,8 @@
       font-size: 2.5em;
       line-height: 1.05em;
       text-shadow: 0 0 .75em transparentize(darken($black, 25%), 0.15);
-      @media (min-width: 768px) {
-        font-size: 3em;
+      @media (min-width: 1024px) {
+        font-size: 2.5em;
       }
       span {
         display: inline-block;

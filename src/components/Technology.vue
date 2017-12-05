@@ -3,23 +3,25 @@
 
     <h2>Latest <strong><abbr title="Technology">Tech</abbr></strong></h2>
 
-    <ul class="memoryGame">
-      <li class="memorySlot" v-for="(card, index) in cards">
-        <transition mode="out-in" enter-active-class="animated flipInX" leave-active-class="animated flipOutX">
-          <button key="secret" v-if="card.status === 'hidden'" @click="selectCard(card)" class="memoryCard" :class="card.status">{{ ('0000' + index.toString(2)).slice(-4) }}</button>
-          <button key="answer" v-else class="memoryCard" :class="card.status">
-            <img :src="'/static/img/tools/' + card.tag + '-black.svg'" :alt="card.name" width="40" height="40" class="black" />
-            <img :src="'/static/img/tools/' + card.tag + '-color.svg'" :alt="card.name" width="40" height="40" class="color" />
-          </button>
-        </transition>
-      </li>
-    </ul>
-    <div class="memoryScore">
-      <span class="left">memoryGame</span>
-      <span class="right">attempts: <strong>{{ ('000' + attempts).slice(-3) }}</strong></span>
+    <div class="memoryWrapper">
+      <div class="memoryScore">
+        <span class="left">techMemoryGame</span>
+        <span class="right">attempts: <strong>{{ ('000' + attempts).slice(-3) }}</strong></span>
+      </div>
+      <ul class="memoryGame">
+        <li class="memorySlot" v-for="(card, index) in cards">
+          <transition mode="out-in" enter-active-class="animated flipInY" leave-active-class="animated flipOutY">
+            <button key="secret" v-if="card.status === 'hidden'" @click="selectCard(card)" class="memoryCard" :class="card.status">{{ ('0000' + index.toString(2)).slice(-4) }}</button>
+            <button key="answer" v-else class="memoryCard" :class="card.status">
+              <img :src="'/static/img/tools/' + card.tag + '-black.svg'" :alt="card.name" width="40" height="40" class="black" />
+              <img :src="'/static/img/tools/' + card.tag + '-color.svg'" :alt="card.name" width="40" height="40" class="color" />
+            </button>
+          </transition>
+        </li>
+      </ul>
     </div>
 
-    <p>I love technology and strongly believe that as a developer and team-leader one must continue learning new techniques and tools all the time. That is why at the beginning of each project I don't go for the "always" technology but rather dedicate time and effort to find the best tools for each challenge; By doing this I can make sure that each development will have great scalability and long life expectancy.</p>
+    <p>I love technology and strongly believe that as a developer and team-leader one must continue learning new techniques and tools all the time. That is why at the beginning of each project I don't go for the "always" technology but rather dedicate time and effort to find the best tools for each challenge; By doing this I make sure that each development will have great scalability and long life expectancy.</p>
 
   </section>
 </template>
@@ -101,12 +103,18 @@
         text-decoration: none;
       }
     }
+    .memoryWrapper {
+      max-width: 24em;
+      margin: 0 auto;
+      background: transparentize($black, .5);
+    }
     .memoryGame {
-      width: 98%;
+      width: calc(100% - 1em);
+      background: transparentize($black, .5);
       display: flex;
       list-style: none;
       margin: 0 auto;
-      padding: 0;
+      padding: .5em;
       flex-wrap: wrap;
       .memorySlot {
         display: block;
@@ -128,7 +136,7 @@
             margin: auto;
           }
           &.hidden {
-            background: transparentize($black, .75);
+            background: $highlight;
             font-family: $alt-font;
             font-size: .85em;
           }
@@ -150,9 +158,10 @@
     .memoryScore {
       font-family: $alt-font;
       font-size: .85em;
-      width: 97%;
+      width: calc(100% - 2em);
       margin: 0 auto;
-      color: transparentize($black, .5);
+      padding: 1em;
+      color: $highlight;
       .left {
         float: left;
       }

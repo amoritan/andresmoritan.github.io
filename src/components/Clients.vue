@@ -41,11 +41,11 @@
   #clients {
     .clients {
       display: flex;
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
       list-style: none;
       flex-wrap: wrap;
-      // justify-content: space-around;
+      max-width: 42em;
       align-content: stretch;
       .client {
         display: block;
