@@ -4,10 +4,10 @@
     <h2>Work <strong>Philosophy</strong></h2>
     
     <ul class="foundations">
-      <li class="foundation"><strong>Individuals and Interactions</strong> <small>&gt;</small> <span>Processes and Tools</span></li>
-      <li class="foundation"><strong>Working Software</strong> <small>&gt;</small> <span>Comprehensive Documentation</span></li>
-      <li class="foundation"><strong>Customer Collaboration</strong> <small>&gt;</small> <span>Contract Negotiation</span></li>
-      <li class="foundation"><strong>Responding to Change</strong> <small>&gt;</small> <span>Following a Plan</span></li>
+      <li class="foundation"><strong>Individuals and Interactions</strong> <small>over</small> <span>Processes and Tools</span></li>
+      <li class="foundation"><strong>Working Software</strong> <small>over</small> <span>Comprehensive Documentation</span></li>
+      <li class="foundation"><strong>Customer Collaboration</strong> <small>over</small> <span>Contract Negotiation</span></li>
+      <li class="foundation"><strong>Responding to Change</strong> <small>over</small> <span>Following a Plan</span></li>
       <li class="foundation"><small class="animated flash">&#95;</small></li>
     </ul>
 
@@ -191,9 +191,13 @@
         small {
           font-size: 1em;
           font-weight: 400;
+          font-style: italic;
+          opacity: .5;
           &.flash {
             animation-iteration-count: infinite;
             animation-duration: 1.5s;
+            font-style: normal;
+            opacity: 1;
           }
         }
         span {
