@@ -25,10 +25,10 @@
               <polygon fill="#424242" points="40 176 120 176 120 160 136 160 136 144 24 144 24 160 40 160"/>
               <rect width="32" height="16" x="64" y="16" fill="#424242"/>
               <path fill="#000" fill-opacity=".15" d="M44,108 L124,108 L124,156 L44,156 L44,108 Z M52,60 L116,60 L116,92 L52,92 L52,60 Z"/>
-              <rect class="backpackPocket" @click="addToTerminal('devText')" width="80" height="48" x="40" y="104" fill="#C2E988"/>
-              <rect class="backpackPocket" @click="addToTerminal('uiText')" width="64" height="32" x="48" y="56" fill="#F27076"/>
-              <rect class="backpackPocket" @click="addToTerminal('dsnText')" width="8" height="48" x="16" y="88" fill="#82AAFF"/>
-              <rect class="backpackPocket" @click="addToTerminal('mktText')" width="8" height="48" x="136" y="88" fill="#C792EA"/>
+              <rect class="backpackPocket" @click="addToTerminal('dev')" width="80" height="48" x="40" y="104" fill="#C2E988"/>
+              <rect class="backpackPocket" @click="addToTerminal('ui')" width="64" height="32" x="48" y="56" fill="#F27076"/>
+              <rect class="backpackPocket" @click="addToTerminal('dsn')" width="8" height="48" x="16" y="88" fill="#82AAFF"/>
+              <rect class="backpackPocket" @click="addToTerminal('mkt')" width="8" height="48" x="136" y="88" fill="#C792EA"/>
             </g>
             <filter id="grayscale">
               <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0
@@ -209,7 +209,7 @@
         this.typed.destroy()
         this.terminalStatus = el
         this.typed = new Typed('#terminal', {
-          stringsElement: '#' + el,
+          stringsElement: '#' + el + 'Txt',
           typeSpeed: 30,
           backSpeed: 10,
           showCursor: false,
@@ -222,10 +222,12 @@
             }, 1000)
           }
         })
+        this.$ga.event('Tools Backpack', 'Pocket Picked', el.toUpperCase())
       },
       nextFact: function () {
         this.nextFactVisible = false
         this.typedB.start()
+        this.$ga.event('Facts Board', 'Next Fact')
       }
     }
   }

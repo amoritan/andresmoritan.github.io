@@ -77,6 +77,7 @@
               }, 2000)
             }
           }
+          this.$ga.event('Memory Game', 'Played', 'Attempts: ' + this.attempts)
         }
       }
     },
@@ -84,7 +85,7 @@
       cards: {
         handler: function () {
           if (this.cards.filter(card => card.status === 'matched').length === this.cards.length) {
-            console.log('Win!')
+            this.$ga.event('Memory Game', 'Finished', 'Attempts: ' + this.attempts)
           }
         },
         deep: true

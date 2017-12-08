@@ -30,6 +30,11 @@ Vue.use(VueObserveVisibility)
 import VueScrollTo from 'vue-scrollto'
 Vue.use(VueScrollTo)
 
+import VueAnalytics from 'vue-analytics'
+Vue.use(VueAnalytics, {
+  id: 'UA-110957584-1'
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

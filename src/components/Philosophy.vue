@@ -23,7 +23,7 @@
             </div>
           </li>
         </ol>
-        <button v-else @click="principlesActive = true">Learn the principles behind</button>
+        <button v-else @click="displayPrinciples">Learn the principles behind</button>
       </transition>
     </div>
 
@@ -148,9 +148,14 @@
       }
     },
     methods: {
+      displayPrinciples: function () {
+        this.principlesActive = true
+        this.$ga.event('Principles', 'Discover')
+      },
       toggleActivePrinciple: function (el) {
         if (this.activePrinciple === null) {
           this.activePrinciple = el
+          this.$ga.event('Principles', 'Display', el)
         } else {
           this.activePrinciple = null
         }

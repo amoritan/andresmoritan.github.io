@@ -20,8 +20,8 @@
         <a href="#contact" v-scroll-to="'#contact'" @click="navToggle">Get In Touch</a>
       </div>
       <div class="references">
-        <a href="http://linkedin.com/in/andresmoritan/" target="_blank" rel="external"><icon name="fab_linkedin"></icon></a>
-      <a href="https://twitter.com/andresmoritan" target="_blank" rel="external"><icon name="fab_twitter"></icon></a>
+        <a href="https://www.linkedin.com/in/andresmoritan/" target="_blank" rel="external" @click="$ga.social('LinkedIn', 'visit', 'https://www.linkedin.com/in/andresmoritan/')"><icon name="fab_linkedin"></icon></a>
+        <a href="https://twitter.com/andresmoritan" target="_blank" rel="external" @click="$ga.social('Twitter', 'visit', 'https://twitter.com/andresmoritan')"><icon name="fab_twitter"></icon></a>
       </div>
     </nav>
   </div>
