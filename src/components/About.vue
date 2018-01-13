@@ -209,7 +209,7 @@
         this.typed.destroy()
         this.terminalStatus = el
         this.typed = new Typed('#terminal', {
-          stringsElement: '#' + el + 'Txt',
+          stringsElement: '#' + el + 'Text',
           typeSpeed: 30,
           backSpeed: 10,
           showCursor: false,
