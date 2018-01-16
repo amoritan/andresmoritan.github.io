@@ -1,5 +1,5 @@
 <template>
-  <section id="technology">
+  <section id="technology" class="inverted">
 
     <h2>Latest <strong><abbr title="Technology">Tech</abbr></strong></h2>
 
@@ -96,9 +96,6 @@
 
 <style lang="scss" scoped>
   #technology {
-    background: $highlight;
-    padding: 3em 1em;
-    color: $black;
     h2 {
       abbr {
         text-decoration: none;

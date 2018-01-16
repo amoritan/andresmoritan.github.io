@@ -1,5 +1,5 @@
 <template>
-  <section id="philosophy">
+  <section id="philosophy" class="inverted">
 
     <h2>Work <strong>Philosophy</strong></h2>
     
@@ -86,9 +86,6 @@
 
 <style lang="scss" scoped>
   #philosophy {
-    h2 {
-      color: $highlight;
-    }
     .foundations {
       font-family: $alt-font;
       font-size: .65em;
@@ -109,6 +106,8 @@
         div {
           width: 10em;
           text-align: center;
+          position: relative;
+          z-index: 1;
           img {
             display: block;
             width: auto;
@@ -138,7 +137,7 @@
           top: 0; right: 0; bottom: 0; left: 0;
           background: url('/static/img/8bit/dot.svg') repeat-x center right;
           background-size: 2em;
-          z-index: -1;
+          z-index: 0; // -1
         }
         &::after {
           content: '';
@@ -210,8 +209,8 @@
         width: 100%;
         margin: 1em auto;
         padding: 1em;
-        box-shadow: 0 0 0 .125em $white;
-        color: $white;
+        box-shadow: 0 0 0 .125em $black;
+        color: $black;
         span {
           font-size: .85em;
         }
@@ -219,7 +218,7 @@
           counter-increment: principle;
           content: counter(principle) '. ';
           font-size: .85em;
-          color: transparentize($white, .75);
+          color: transparentize($black, .75);
         }
         &:nth-child(1) {
           animation-delay: 0;
@@ -271,16 +270,16 @@
       width: auto;
       font-family: $main-font;
       background: none;
-      box-shadow: 0 0 0 .125em $white;
+      box-shadow: 0 0 0 .125em $black;
       border: none;
-      color: $white;
+      color: $black;
       padding: 1em;
       margin: 0 auto;
       cursor: pointer;
       transition: all .25s;
       &:hover {
-        color: $black;
-        background: $white;
+        color: $white;
+        background: $black;
       }
     }
   }

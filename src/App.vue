@@ -57,12 +57,16 @@
     &.inverted {
       background: $highlight;
       color: $black;
+      h2 {
+        color: $black;
+      }
     }
   }
   
   h2 {
     font-size: 2em;
     font-weight: 300;
+    color: $highlight;
   }
   h3 {
     font-size: 1.75em;
@@ -72,5 +76,36 @@
   p {
     max-width: 40em;
     margin: 1em auto;
+  }
+
+  .windowWrapper {
+    font-family: $alt-font;
+    background: $highlight;
+    padding: .25em;
+    .windowHeader {
+      height: 1.5em;
+      position: relative;
+      color: transparentize($black, .25);
+      span {
+        font-size: .8em;
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 1em;
+        height: 1em;
+        position: absolute;
+        top: .125em; right: 0;
+        background: transparentize($black, .75);
+      }
+    }
+    .windowContent {
+      background: $black;
+      min-height: 4em;
+      padding: .25em;
+      span {
+        font-size: .8em;
+      }
+    }
   }
 </style>
