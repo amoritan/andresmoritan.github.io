@@ -3,157 +3,115 @@
 
     <h2>Areas of <strong>Expertise</strong></h2>
 
-    <div class="areasWrapper">
-      <figure v-observe-visibility="visibilityChanged" :class="{ active: isVisible }">
-        <img src="/static/img/areas/dev.svg" width="375" height="667" alt="Software Development" @mouseenter="mouseChanged(true, 'dev')" @mouseleave="mouseChanged(false, 'dev')" />
-        <img src="/static/img/areas/ui.svg" width="375" height="667" alt="User Interface / Experience" @mouseenter="mouseChanged(true, 'ui')" @mouseleave="mouseChanged(false, 'ui')" />
-        <img src="/static/img/areas/design.svg" width="375" height="667" alt="Graphic Design" @mouseenter="mouseChanged(true, 'dsn')" @mouseleave="mouseChanged(false, 'dsn')" />
-        <img src="/static/img/areas/share.svg" width="375" height="667" alt="Online Marketing" @mouseenter="mouseChanged(true, 'mkt')" @mouseleave="mouseChanged(false, 'mkt')" />
-      </figure>
-      <ul>
-        <transition mode="out-in" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
-          <li v-if="hoverOn === ''" key="nil" class="gray"><span id="upChevron">&#94;</span><span id="leftChevron">&#12296;</span> Pick a Stack</li>
-          <li v-else-if="hoverOn === 'dev'" key="dev" class="green">Software Development</li>
-          <li v-else-if="hoverOn === 'ui'" key="ui" class="red">User Experience</li>
-          <li v-else-if="hoverOn === 'dsn'" key="dsn" class="blue">Graphic Design</li>
-          <li v-else-if="hoverOn === 'mkt'" key="mkt" class="purple">Online Marketing</li>
-        </transition>
-      </ul>
-    </div>
+    <ul class="areas">
+      <li class="area">
+        <object id="softwareIcon" type="image/svg+xml" data="/static/img/areas/code.svg"></object>
+        <h3 id="softwareTitle" class="animated" :class="{ fadeInUp: softwareTitle }"><span>Software</span> Development</h3>
+      </li>
+      <li class="area">
+        <object id="uxIcon" type="image/svg+xml" data="/static/img/areas/pointer.svg"></object>
+        <h3 id="uxTitle" class="animated" :class="{ fadeInUp: uxTitle }"><span>User</span> Experience</h3>
+      </li>
+      <li class="area">
+        <object id="designIcon" type="image/svg+xml" data="/static/img/areas/nib.svg"></object>
+        <h3 id="designTitle" class="animated" :class="{ fadeInUp: designTitle }"><span>Identity</span> Design</h3>
+      </li>
+      <li class="area">
+        <object id="marketingIcon" type="image/svg+xml" data="/static/img/areas/megaphone.svg"></object>
+        <h3 id="marketingTitle" class="animated" :class="{ fadeInUp: marketingTitle }"><span>Digital</span> Marketing</h3>
+      </li>
+    </ul>
 
   </section>
 </template>
 
 <script>
+  import Vivus from 'vivus'
   export default {
     name: 'expertise',
     data () {
       return {
-        isVisible: false,
-        hoverOn: ''
+        softwareTitle: false,
+        uxTitle: false,
+        designTitle: false,
+        marketingTitle: false
       }
     },
-    methods: {
-      visibilityChanged (isVisible) {
-        this.isVisible = isVisible
-      },
-      mouseChanged (isHover, el) {
-        if (isHover) {
-          this.hoverOn = el
-        } else {
-          this.hoverOn = ''
-        }
-      }
+    mounted () {
+      var _this = this
+      this.softwareIcon = new Vivus('softwareIcon', {duration: 100}, function () {
+        _this.softwareTitle = true
+      })
+      this.uxIcon = new Vivus('uxIcon', {duration: 100}, function () {
+        _this.uxTitle = true
+      })
+      this.designIcon = new Vivus('designIcon', {duration: 100}, function () {
+        _this.designTitle = true
+      })
+      this.marketingIcon = new Vivus('marketingIcon', {duration: 100}, function () {
+        _this.marketingTitle = true
+      })
     }
   }
 </script>
 
 <style lang="scss" scoped>
   #expertise {
-    padding: 3em 1em;
-    h2 {
-      color: $highlight;
-    }
-    figure {
-      position: relative;
-      perspective: 1000px;
-      width: 80%;
-      max-width: 18em;
-      margin: 3em auto 2em auto;
-      img {
-        display: block;
-        width: 75%;
-        height: auto;
-        position: absolute;
-        margin: auto;
-        top: 0; right: 0; bottom: 0; left: 0;
-        transition: all ease 1.5s;
-        cursor: pointer;
-        &:nth-child(1) {
-          position: relative;
-        }
-      }
-      &.active {
-        img:nth-child(1) {
-          transform: rotateX(5deg) rotateY(60deg) translateZ(-40px);
-        }
-        img:nth-child(2) {
-          transform: rotateX(5deg) rotateY(60deg) translateZ(0);
-        }
-        img:nth-child(3) {
-          transform: rotateX(5deg) rotateY(60deg) translateZ(40px);
-        }
-        img:nth-child(4) {
-          transform: rotateX(5deg) rotateY(60deg) translateZ(80px);
-        }
-      }
-      &:hover, &.hover {
-        img {
-          opacity: .5;
-          &:hover, &.hover {
-            opacity: 1;
-          }
-        }
-      }
-    }
-    ul {
-      list-style: none;
-      margin: 1em 0;
-      padding: 0;
-      font-size: 1.5em;
-      height: 2.5em;
-      position: relative;
-      li {
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        display: block;
-        padding: .5em 1em;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 300;
-        animation-duration: .5s;
-        &.gray {
-          color: $gray;
-          #leftChevron {
-            display: none;
-          }
-        }
-        &.green {
-          color: $green;
-        }
-        &.red {
-          color: $red;
-        }
-        &.blue {
-          color: $blue;
-        }
-        &.purple {
-          color: $purple;
-        }
-      }
-    }
-    .areasWrapper {
+    .areas {
       display: flex;
-      flex-direction: column;
-      @media (min-width: 1024px) {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        figure {
-          margin: 3em 0 2em 0;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style: none;
+      margin: 2em 0;
+      padding: 0;
+      @media (min-width: 1280px) {
+        margin: 4em 0;
+      }
+      .area {
+        margin: 2em auto;
+        padding: 0;
+        width: 90%;
+        text-align: center;
+        object {
+          width: auto;
+          height: 12em;
         }
-        ul {
-          min-width: 14em;
-          li {
-            text-align: left;
-            &.gray {
-              #leftChevron {
-                display: inline;
-              }
-              #upChevron {
-                display: none;
-              }
-            }
+        h3 {
+          width: auto;
+          margin: 0;
+          display: inline-block;
+          white-space: nowrap;
+          font-family: $alt-font;
+          font-size: 1.25em;
+          font-weight: 400;
+          word-spacing: -.5em;
+          color: transparentize($black, .5);
+          padding: .5em 1em;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          span {
+            text-transform: lowercase;
+          }
+          &#softwareTitle {
+            background: $green;
+          }
+          &#uxTitle {
+            background: $red;
+          }
+          &#designTitle {
+            background: $blue;
+          }
+          &#marketingTitle {
+            background: $purple;
+          }
+        }
+        @media (min-width: 800px) {
+          width: 40%;
+        }
+        @media (min-width: 1280px) {
+          width: 20%;
+          h3 {
+            font-size: 1em;
           }
         }
       }

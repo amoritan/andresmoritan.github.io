@@ -30,7 +30,7 @@
     </div>
 
     <div class="footNote">
-      <p>This website is Progresive Web Application build with awesome open-source frameworks and libraries such as <a href="https://vuejs.org" target="_blank" rel="nofollow">Vue.js</a>, <a href="http://www.mattboldt.com/typed.js/" target="_blank" rel="nofollow">Typed.js</a> and <a href="https://fontawesome.com" target="_blank" rel="nofollow">Font Awesome</a>. Following that spirit, feel free to grab any snippet of code and design that your found useful. <strong>Andres Moritan &lt;amoritan@me.com&gt;</strong>.</p>
+      <p>This website is Progresive Web Application build with awesome open-source frameworks and libraries such as <a href="https://vuejs.org" target="_blank" rel="nofollow">Vue.js</a>, <a href="http://www.mattboldt.com/typed.js/" target="_blank" rel="nofollow">Typed.js</a>, <a href="http://maxwellito.github.io/vivus/" target="_blank" rel="nofollow">Vivus</a> and <a href="https://fontawesome.com" target="_blank" rel="nofollow">Font Awesome</a>. Following that spirit, feel free to grab any snippet of code and design that your found useful. <strong>Andres Moritan &lt;amoritan@me.com&gt;</strong>.</p>
     </div>
 
   </footer>
