@@ -42,12 +42,12 @@
     }
     blockquote {
       width: 95%;
-      max-width: 768px;
+      max-width: 18em;
       text-align: center;
       font-weight: 700;
-      font-size: 2.5em;
+      font-size: 2em;
       line-height: 1.05em;
-      @media (min-width: 1024px) {
+      @media (min-width: 375px) {
         font-size: 2.5em;
       }
       span {
