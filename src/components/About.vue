@@ -148,7 +148,7 @@
           labels: ['Team Leading', 'BackEnd Dev', 'FrontEnd Dev', 'UI/UX', 'Graphic', 'Marketing', 'Teaching'],
           datasets: [{
             label: 'Skills',
-            data: [80, 70, 100, 80, 40, 75, 90],
+            data: [80, 80, 100, 80, 40, 75, 90],
             backgroundColor: 'rgba(125, 203, 196, 0.15)',
             borderColor: 'rgb(125, 203, 196)',
             pointBackgroundColor: 'rgb(125, 203, 196)'
