@@ -1,0 +1,115 @@
+/* ==========================================================================
+   0. Typography, colours, dependecies and animations.
+   ========================================================================== */
+
+/* Typography */
+@import url('//use.typekit.net/gjl7yob.css');
+$font-family: source-sans-pro, sans-serif;
+
+/* Colours */
+$black: hsl(220,40,12);
+$white: #ffffff;
+
+
+
+
+/* ==========================================================================
+   1. Cross-site style
+   ========================================================================== */
+
+/* Generic properties */
+body {
+  font-family: $font-family;
+  font-size: 1em;
+  color: $white;
+  background: $black;
+  transform: translateZ(0);
+  margin: 0;
+}
+
+
+
+
+/* ==========================================================================
+   2. Parallax style
+   ========================================================================== */
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin-x: 100%;
+  scroll-behavior: smooth;
+  .parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    margin-bottom: 100vh;
+    &.conected {
+      margin-bottom: 25vh;
+    }
+    .parallax__layer {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      transform-origin-x: 100%;
+      &--base {
+        transform: translateZ(0);
+      }
+      &--back_0, &--back_1, &--back_2 {
+        pointer-events: none;
+      }
+      &--back_0 {
+        transform: translateZ(-.25px) scale(1.25);
+      }
+      &--back_1 {
+        transform: translateZ(-.5px) scale(1.5);
+      }
+      &--back_2 {
+        transform: translateZ(-.75px) scale(1.75);
+      }
+    }
+  }
+}
+
+
+
+
+/* ==========================================================================
+   3. Header style
+   ========================================================================== */
+
+
+
+header {
+  h1, h2 {
+    margin: .5rem 1.5rem;
+    line-height: 1em;
+  }
+  h1 {
+    font-size: 4em;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+  .parallax__layer {
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    &--back_0 {
+      background-image: url('./assets/background-icons-a.svg');
+    }
+    &--back_1 {
+      background-image: url('./assets/background-icons-b.svg');
+    }
+    &--back_2 {
+      background-image: url('./assets/background-icons-c.svg');
+    }
+    &--base {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
