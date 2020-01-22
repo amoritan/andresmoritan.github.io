@@ -1,0 +1,33 @@
+{
+  "name": "andresmoritan",
+  "version": "2.0.0",
+  "description": "Andres Moritan's Professional Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve",
+    "dev": "sass --watch index.scss index.css & npm run start",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresmoritan/andresmoritan.github.io.git"
+  },
+  "author": "Andres Moritan <amoritan@me.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/andresmoritan/andresmoritan.github.io/issues"
+  },
+  "homepage": "https://github.com/andresmoritan/andresmoritan.github.io#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.1.0",
+    "sass": "^1.25.0",
+    "serve": "^11.3.0"
+  }
+}
