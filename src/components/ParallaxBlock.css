@@ -1,0 +1,26 @@
+.ParallaxBlock {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  margin-bottom: 100vh;
+}
+
+.ParallaxBlock-layer {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform-origin-x: 100%;
+  pointer-events: none;
+}
+.ParallaxBlock-layer--base {
+  pointer-events: auto;
+  transform: translateZ(0);
+}
+.ParallaxBlock-layer--back_1 {
+  transform: translateZ(-.25px) scale(1.25);
+}
+.ParallaxBlock-layer--back_2 {
+  transform: translateZ(-.5px) scale(1.5);
+}
+.ParallaxBlock-layer--back_3 {
+  transform: translateZ(-.75px) scale(1.75);
+}

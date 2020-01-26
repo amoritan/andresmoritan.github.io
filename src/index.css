@@ -7,4 +7,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: hsl(220, 40%, 12%);
   color: #fff;
+  transform: translateZ(0);
 }
