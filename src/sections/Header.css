@@ -1,0 +1,22 @@
+.Header h1, .Header h2 {
+  margin: .5rem 1.5rem;
+  line-height: 1em;
+}
+.Header h1 {
+  font-size: 4em;
+  font-weight: 700;
+}
+.Header h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+.Header .ParallaxBlock-layer {
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+}
+.Header .ParallaxBlock-layer--base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
