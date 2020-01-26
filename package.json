@@ -1,6 +1,7 @@
 {
   "name": "andresmoritan",
-  "version": "0.1.0",
+  "version": "2.0.0",
+  "description": "Andres Moritan's Professional Website",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -30,5 +31,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresmoritan/andresmoritan.github.io.git"
+  },
+  "author": "Andres Moritan <amoritan@me.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/andresmoritan/andresmoritan.github.io/issues"
+  },
+  "homepage": "https://andresmoritan.com"
 }
