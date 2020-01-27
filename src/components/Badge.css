@@ -1,0 +1,10 @@
+.Badge {
+  display: inline-block;
+  white-space: nowrap;
+  padding: .125em .25em;
+  border-radius: .25em;
+  margin: .125em .25em;
+}
+.Badge svg {
+  margin-right: .25em;
+}
