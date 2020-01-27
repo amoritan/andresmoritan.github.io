@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ParallaxBlock from '../components/ParallaxBlock';
+import ParallaxBlock from '../../components/ParallaxBlock';
 
 import './Header.css';
 
