@@ -1,0 +1,48 @@
+.Project {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.Project-photo {
+  width: 12rem;
+  transition: all .5s;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+}
+.Project-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.Project-details {
+  margin: 0 .5rem;
+}
+.Project-details h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 0 0 .5rem 0;
+}
+.Project-details p {
+  display: none;
+}
+
+.Project.active {
+  flex-wrap: wrap;
+}
+.Project.active .Project-photo {
+  margin-bottom: 4em;
+  width: 100%;
+  order: 0 !important;
+}
+.Project.active .Project-details {
+  transform: skew(0deg, 10deg);
+  text-align: left !important;
+}
+.Project.active .Project-details p {
+  display: block;
+}

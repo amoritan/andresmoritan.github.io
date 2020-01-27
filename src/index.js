@@ -1,8 +1,27 @@
 import React from 'react';
 import { render } from 'react-snapshot';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import {
+  faLightbulbOn,
+  faGem,
+  faSeedling,
+  faChalkboardTeacher,
+  faBrain,
+} from '@fortawesome/pro-solid-svg-icons';
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+library.add(
+  fab,
+  faLightbulbOn,
+  faGem,
+  faSeedling,
+  faChalkboardTeacher,
+  faBrain,
+);
 
 // eslint-disable-next-line react/jsx-filename-extension
 render(<App />, document.getElementById('root'));
